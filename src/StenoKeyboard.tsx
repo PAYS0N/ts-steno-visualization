@@ -13,7 +13,7 @@ function StenoKeyboard(): React.ReactElement {
 				<div className="steno-key">H</div>
 				<div className="steno-key">R</div>
 			</div>
-			<div className="steno-key">*</div>
+			<div className="steno-key asterisk-key">*</div>
 			<div className="right-keys">
 				<div className="steno-key">F</div>
 				<div className="steno-key">R</div>
