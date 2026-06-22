@@ -1,4 +1,4 @@
-.board {
+.steno-keyboard {
 	display: flex;
 	justify-content: space-around;
 	padding: 0 2rem;
@@ -20,13 +20,6 @@
 	align-items: stretch;
 	column-gap: 10px;
 	row-gap: 10px;
-}
-
-.steno-key {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border: 2px solid var(--border);
 }
 
 .asterisk-key {

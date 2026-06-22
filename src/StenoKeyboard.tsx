@@ -1,32 +1,33 @@
 import "./StenoKeyboard.css";
+import StenoKey from "./StenoKey.tsx"
 
 function StenoKeyboard(): React.ReactElement {
 	return (
-		<div className="board">
+		<div className="steno-keyboard">
 			<div className="left-keys">
-				<div className="steno-key">#</div>
-				<div className="steno-key">S</div>
-				<div className="steno-key">T</div>
-				<div className="steno-key">K</div>
-				<div className="steno-key">P</div>
-				<div className="steno-key">W</div>
-				<div className="steno-key">H</div>
-				<div className="steno-key">R</div>
+				<StenoKey label="#"/>
+				<StenoKey label="S"/>
+				<StenoKey label="T"/>
+				<StenoKey label="K"/>
+				<StenoKey label="P"/>
+				<StenoKey label="W"/>
+				<StenoKey label="H"/>
+				<StenoKey label="R"/>
 			</div>
-			<div className="steno-key asterisk-key">*</div>
+			<StenoKey className="asterisk-key" label="*"/>
 			<div className="right-keys">
-				<div className="steno-key">F</div>
-				<div className="steno-key">R</div>
-				<div className="steno-key">P</div>
-				<div className="steno-key">B</div>
-				<div className="steno-key">L</div>
-				<div className="steno-key">G</div>
-				<div className="steno-key">T</div>
-				<div className="steno-key">S</div>
-				<div className="steno-key">D</div>
-				<div className="steno-key">Z</div>
+				<StenoKey label="F"/>
+				<StenoKey label="R"/>
+				<StenoKey label="P"/>
+				<StenoKey label="B"/>
+				<StenoKey label="L"/>
+				<StenoKey label="G"/>
+				<StenoKey label="T"/>
+				<StenoKey label="S"/>
+				<StenoKey label="D"/>
+				<StenoKey label="Z"/>
 			</div>
-		</div>
+		</div>	
 	)
 }
 
