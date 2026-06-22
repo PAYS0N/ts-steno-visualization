@@ -1,0 +1,13 @@
+.left-keys {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 4rem 4rem 4rem 4rem;
+	grid-template-rows: 4rem 4rem;
+}
+
+.right-keys {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 4rem 4rem 4rem 4rem 4rem;
+	grid-template-rows: 4rem 4rem;
+}

@@ -1,3 +1,5 @@
+import "./StenoKeyboard.css";
+
 function StenoKeyboard(): React.ReactElement {
 	return (
 		<>
