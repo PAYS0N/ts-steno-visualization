@@ -1,13 +1,22 @@
 .left-keys {
-	display: grid;
-	grid-auto-flow: column;
 	grid-template-columns: 4rem 4rem 4rem 4rem;
 	grid-template-rows: 4rem 4rem;
 }
 
 .right-keys {
-	display: grid;
-	grid-auto-flow: column;
 	grid-template-columns: 4rem 4rem 4rem 4rem 4rem;
 	grid-template-rows: 4rem 4rem;
+}
+
+.left-keys, .right-keys {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	column-gap: 10px;
+	row-gap: 10px;
+}
+
+.board {
+	display: flex;
+	justify-content: space-around;
 }
