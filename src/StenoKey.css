@@ -3,4 +3,5 @@
 	flex-direction: column;
 	justify-content: center;
 	border: 2px solid var(--border);
+	border-radius: 6px;
 }

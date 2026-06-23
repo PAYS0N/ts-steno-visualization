@@ -1,12 +1,13 @@
 import './StenoKey.css'
 
-interface KeyProp extends React.HTMLAttributes<HTMLDivElement>{
+interface KeyProp{
 	label: string;
+	className?: string;
 }
 
-function StenoKey({label}: KeyProp): React.ReactElement {
+function StenoKey({label, className = ""}: KeyProp): React.ReactElement {
 	return (
-		<div className="steno-key">{label}</div>
+		<div className={className + " " + "steno-key"}>{label}</div>
 	)
 }
 
