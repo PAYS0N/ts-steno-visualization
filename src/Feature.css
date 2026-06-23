@@ -1,3 +1,5 @@
 .feature {
+	padding: 1rem;
 	border: 2px solid var(--border);
+	border-radius: 3px;
 }

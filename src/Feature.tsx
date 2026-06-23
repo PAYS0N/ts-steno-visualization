@@ -2,11 +2,15 @@ import './Feature.css'
 
 interface FeatureProp{
 	label: string;
+	forRadio: string;
 }
 
-function Feature({label}: FeatureProp): React.ReactElement {
+function Feature({label, forRadio}: FeatureProp): React.ReactElement {
 	return (
-		<div className="feature">{label}</div>
+		<label className="feature">
+			<input type="radio" value={label} name={forRadio} />
+			<span>{label}</span>
+		</label>
 	)
 }
 

@@ -4,8 +4,8 @@ import "./FeatureSelection.css"
 function FeatureSelection(): React.ReactElement {
 	return (
 		<div className="feature-selection">
-			<Feature label="function"/>
-			<Feature label="for loop"/>
+			<Feature forRadio="first-stroke" label="function"/>
+			<Feature forRadio="first-stroke" label="for loop"/>
 		</div>
 	)
 }
