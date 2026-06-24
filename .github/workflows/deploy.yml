@@ -10,8 +10,6 @@ permissions:
   pages: write
   id-token: write
 
-# Do NOT cancel in-progress runs: cancelling a deployment mid-flight can
-# leave it stuck and block the next one.
 concurrency:
   group: pages
   cancel-in-progress: false
