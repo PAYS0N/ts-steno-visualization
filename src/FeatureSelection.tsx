@@ -2,14 +2,17 @@ import Feature from "./Feature.tsx"
 import "./FeatureSelection.css"
 
 type selectionProp = {
-	handleClick: Function;
+	handleClick: (label: string) => void;
+	selections: string[];
+	name: string;
 }
 
-function FeatureSelection({handleClick}: selectionProp): React.ReactElement {
+function FeatureSelection({handleClick, selections, name}: selectionProp): React.ReactElement {
 	return (
 		<div className="feature-selection">
-			<Feature forRadio="first-stroke" label="function" handleClick={handleClick}/>
-			<Feature forRadio="first-stroke" label="for-loop" handleClick={handleClick}/>
+			{selections.map((label) => (
+				<Feature key={label} forRadio={name} label={label} handleClick={handleClick}/>
+			))}
 		</div>
 	)
 }

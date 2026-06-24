@@ -1,17 +1,42 @@
 .steno-keyboard {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 	padding: 0 2rem;
+	--cell-width: 3rem;
+}
+
+.top-keys{
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-keys{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 25%;
+}
+
+.bottom-keys .steno-key{
+	width: var(--cell-width);
+	height: var(--cell-width);
+}
+
+.left-vowels {
+	display: flex;
+}
+
+.right-vowels {
+	display: flex;
 }
 
 .left-keys {
-	grid-template-columns: 4rem 4rem 4rem 4rem;
-	grid-template-rows: 4rem 4rem;
+	grid-template-columns: var(--cell-width) var(--cell-width) var(--cell-width) var(--cell-width);
+	grid-template-rows: var(--cell-width) var(--cell-width);
 }
 
 .right-keys {
-	grid-template-columns: 4rem 4rem 4rem 4rem 4rem;
-	grid-template-rows: 4rem 4rem;
+	grid-template-columns: var(--cell-width) var(--cell-width) var(--cell-width) var(--cell-width) var(--cell-width);
+	grid-template-rows: var(--cell-width) var(--cell-width);
 }
 
 .left-keys, .right-keys {
