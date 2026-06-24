@@ -5,3 +5,8 @@
 	border: 2px solid var(--border);
 	border-radius: 6px;
 }
+
+.selected {
+	background: var(--accent);
+	color: var(--bg);
+}
